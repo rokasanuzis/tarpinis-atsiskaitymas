@@ -1,0 +1,328 @@
+$my-header: #FAFAFA;
+$my-button: rgb(36, 160, 237);
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $my-header;
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  z-index: 2;
+  
+  span {
+    
+  }
+}
+
+button {
+  padding: 10px;
+  background-color: $my-button;
+  border-radius: 5px;
+  border: 0px;
+  color: #fff;
+  z-index: 1;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    color: black;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  background-color: $my-header;
+  background-image: url(bg-masthead.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  &::after {
+    content: "";
+    background-color: rgba($my-button, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: color-burn;
+  }
+}
+
+.rowas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  background-color: $my-header;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 60px;
+    height: 60px;
+    color:rgb(36, 160, 237);
+  }
+}
+
+.icon1, .icon2, .icon3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 50px;
+  width: 300px;
+
+  span {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.text, .text2, .text3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 400px;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 0;
+    font-size: 20px;
+
+    span {
+      width: 400px;
+      font-weight: bold;
+      padding: 5px;
+      font-size: 30px;
+      text-align: left;
+    }
+  }
+}
+
+.photo {
+  width: 50%;
+  height: 400px;
+  background-image: url(bg-showcase-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.photo2 {
+  width: 50%;
+  height: 400px;
+  background-image: url(bg-showcase-2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.photo3 {
+  width: 50%;
+  height: 400px;
+  background-image: url(bg-showcase-3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: $my-header;
+
+  .viens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px grey;
+    }
+
+    span {
+      padding: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+.emailinput {
+  width: 100%;
+  height: 500px;
+  background-image: url(bg-masthead.jpg);
+}
+
+footer {
+  background-color: $my-header;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+
+  span {
+    font-size: 10px;
+    margin-left: 50px;
+  }
+}
+
+.foottwo {
+  display: flex;
+  flex-direction: row;
+
+  svg {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    color: $my-button;
+  }
+}
+
+ul {
+  margin-left: 0;
+
+  li {
+    display: inline;
+
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    color: $my-button;
+    margin: 10px;
+  }
+  }
+}
+
+h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+input {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+::placeholder {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.minus {
+  margin-top: 0;
+  height: 300px;
+}
+
+@media (max-width: 600px) {
+  .rowas {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+  }
+  .photo, .photo2, .photo3 {
+    width: 100%;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review {
+    flex-direction: column;
+    height: 900px;
+  }
+  .text {
+    order: 2;
+  }
+  .photo {
+    order: 1;
+  }
+  .text2 {
+    order: 4;
+  }
+  .photo2 {
+    order: 3;
+  }
+  .text3 {
+    order: 6;
+  }
+  .photo3 {
+    order: 5;
+  }
+  footer {
+    flex-direction: column;
+  }
+}

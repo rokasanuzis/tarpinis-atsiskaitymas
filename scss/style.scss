@@ -325,4 +325,16 @@ input {
   footer {
     flex-direction: column;
   }
+  input {
+    width: 300px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  span {
+    padding: 20px;
+  }
+  p {
+    padding: 20px;
+  }
 }

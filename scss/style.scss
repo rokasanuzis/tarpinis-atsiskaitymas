@@ -334,7 +334,7 @@ input {
   span {
     padding: 20px;
   }
-  p {
-    padding: 20px;
+  ::placeholder {
+    font-size: 10px;
   }
 }
